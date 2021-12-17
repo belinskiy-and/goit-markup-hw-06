@@ -383,9 +383,14 @@
             <!-- MAILING -->
             <div class="footer-mailing">
                 <p class="footer-mailing-title">Подпишитесь на рассылку</p>
-                <form class="footer-mailing-form" method="POST" action="javascript:void(0);" autocomplete="off"></form>
+                <form class="footer-mailing-form" method="POST" action="javascript:void(0);" autocomplete="off">
                     <input class="footer-mailing-email" type="email" name="email" placeholder="E-mail">
-                    <button class="footer-mailing-submit" type="submit">Подписаться</button>                    
+                    <button class="footer-mailing-submit" type="submit">
+                        Подписаться                        
+                        <svg class="mailing-submit-icon" width="24" height="24">
+                            <use href="images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>                    
                 </form>
             </div>
         </div>
