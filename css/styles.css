@@ -799,7 +799,6 @@ p {
   font-family: inherit;
   padding: 12px 16px;
   height: 120px;
-  margin-bottom: 20px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -820,7 +819,7 @@ p {
 }
 
 .form-chekbox {
-  padding-bottom: 30px;
+  margin-top: 20px;
 }
 
 .form-checkbox-label {
@@ -870,7 +869,10 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding: 10px 6px;
   min-width: 200px;
 
