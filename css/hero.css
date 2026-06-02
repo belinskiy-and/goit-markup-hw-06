@@ -1,0 +1,31 @@
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    #2e2f42 url("../images/hero-bg.jpg") center / cover no-repeat;
+}
+
+.hero-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero-button {
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}

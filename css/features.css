@@ -1,0 +1,32 @@
+.features-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
+.features-item-image-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 112px;
+  margin-bottom: 8px;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  fill: currentColor;
+  background-color: #f4f4fd;
+}
+
+.features-title {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+}
