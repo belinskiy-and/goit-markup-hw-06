@@ -22,7 +22,6 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   color: #2e2f42;
 }
 
@@ -33,6 +32,10 @@
 @media screen and (max-width: 767px) {
   .features-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+
+  .features-title {
+    text-align: center;
   }
 }
 
