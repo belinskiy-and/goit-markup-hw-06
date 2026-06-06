@@ -41,7 +41,6 @@
 }
 
 .address-item-link {
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -112,14 +111,19 @@
 
   .address-item-link {
     display: block;
-    padding-top: 6px;
-    padding-bottom: 6px;
     font-size: 12px;
+    letter-spacing: 0.04em;
     line-height: 1.17;
   }
 
   .button-burger {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 
