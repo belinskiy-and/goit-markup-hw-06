@@ -24,9 +24,9 @@
 
 .modal {
   position: relative;
-  width: 408px;
+  max-width: 288px;
   max-height: 80%;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   overflow: auto;
   border-radius: 4px;
   box-shadow:
@@ -136,7 +136,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   margin-right: 8px;
   fill: transparent;
@@ -171,4 +171,21 @@
   height: 56px;
   color: #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================================================
+    2. TABLET
+   ================================================================== */
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    max-height: 80%;
+    padding: 72px 24px 24px;
+  }
+}
+
+/* ==================================================================
+    3. DESKTOP
+   ================================================================== */
+@media screen and (min-width: 1158px) {
 }

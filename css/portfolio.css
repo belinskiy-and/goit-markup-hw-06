@@ -1,12 +1,8 @@
-.portfolio .section-title {
-  margin-bottom: 72px;
+.portfolio {
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+.portfolio .section-title {
+  margin-bottom: 72px;
 }
 
 .potrfolio-item {
@@ -30,6 +26,7 @@
 
 .potrfolio-item-image {
   width: 100%;
+  height: 100%;
 }
 
 .potrfolio-item-content {
@@ -71,4 +68,39 @@
 
 .potrfolio-item:hover .portfolio-item-overlay {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+  .potrfolio-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
+/* ==================================================================
+    2. TABLET
+   ================================================================== */
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .potrfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* ==================================================================
+    3. DESKTOP
+   ================================================================== */
+@media screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .potrfolio-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
 }

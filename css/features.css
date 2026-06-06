@@ -1,10 +1,4 @@
-.features-list {
-  display: flex;
-  column-gap: 24px;
-}
-
-.features-item {
-  flex-basis: calc((100% - 24px * 3) / 4);
+.features {
 }
 
 .features-item-image-overlay {
@@ -25,8 +19,60 @@
 .features-title {
   margin-bottom: 8px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   color: #2e2f42;
+}
+
+.features-text {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .features-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+/* ==================================================================
+    2. TABLET
+   ================================================================== */
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .features-item-image-overlay {
+    display: none;
+  }
+}
+
+/* ==================================================================
+    3. DESKTOP
+   ================================================================== */
+@media screen and (min-width: 1158px) {
+  .features-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+
+  .features-title {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    color: #2e2f42;
+  }
 }

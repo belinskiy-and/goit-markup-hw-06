@@ -1,23 +1,26 @@
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding: 72px 0px;
+  max-width: 320px;
   margin: 0 auto;
 
   color: #ffffff;
 
-  background:
+  background: #2e2f42 center / cover no-repeat;
+  background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    #2e2f42 url("../images/hero-bg.jpg") center / cover no-repeat;
+    image-set(
+      url("../images/hero-mobile.jpg") 1x,
+      url("../images/hero-mobile@2x.jpg") 2x
+    );
 }
 
 .hero-title {
-  max-width: 496px;
-  margin-bottom: 48px;
+  max-width: 216px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -28,4 +31,57 @@
   margin-right: auto;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* ==================================================================
+    2. TABLET
+   ================================================================== */
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url("../images/hero-tablet.jpg") 1x,
+        url("../images/hero-tablet@2x.jpg") 2x
+      );
+  }
+
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+/* ==================================================================
+    3. DESKTOP
+   ================================================================== */
+@media screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url("../images/hero-desktop.jpg") 1x,
+        url("../images/hero-desktop@2x.jpg") 2x
+      );
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }

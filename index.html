@@ -28,31 +28,105 @@
         <a class="logo" href="./index.html"
           ><span class="accent">Web</span>Studio</a
         >
-        <nav class="site-nav">
-          <ul class="site-nav-list">
-            <li>
-              <a class="link site-nav-link active" href="#features">Features</a>
-            </li>
-            <li><a class="link site-nav-link" href="#team">Team</a></li>
-            <li>
-              <a class="link site-nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul class="address-list">
-            <li>
-              <a class="link address-item-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link address-item-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="menu-container">
+          <nav class="site-nav">
+            <ul class="site-nav-list">
+              <li class="site-nav-item">
+                <a class="link site-nav-link active" href="#features"
+                  >Features</a
+                >
+              </li>
+              <li class="site-nav-item">
+                <a class="link site-nav-link" href="#team">Team</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="link site-nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a
+                  class="link address-item-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="link address-item-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- Social -->
+          <div class="mobile-menu-social-block">
+            <ul class="mobile-menu-social-list">
+              <li class="mobile-menu-social-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="mobile-menu-social-link"
+                  target="_blank"
+                >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  href="https://x.com/"
+                  class="mobile-menu-social-link"
+                  target="_blank"
+                >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="mobile-menu-social-link"
+                  target="_blank"
+                >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a
+                  href="https://linkedin.com/"
+                  class="mobile-menu-social-link"
+                  target="_blank"
+                >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="mobile-menu-close-button" type="button">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#mobile-close-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="button-burger" type="button">
+          <svg class="burger-icon" width="17" height="15">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <!-- Mobile menu -->
+        <!-- <div class="mobile-menu">
+          
+          test
+        </div> -->
       </div>
     </header>
     <!-- #endregion Header -->
@@ -86,7 +160,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Strategy</h3>
-              <p>
+              <p class="features-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -98,7 +172,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Punctuality</h3>
-              <p>
+              <p class="features-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -110,7 +184,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Diligence</h3>
-              <p>
+              <p class="features-text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -122,7 +196,7 @@
                 </svg>
               </div>
               <h3 class="features-title">Technologies</h3>
-              <p>
+              <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -589,7 +663,7 @@
     <!-- #endregion Footer -->
 
     <!-- #region modal -->
-    <div class="backdrop" id="modal">
+    <div class="backdrop is-open" id="modal">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -667,16 +741,15 @@
                 <use href="./images/icons.svg#icon-check-mark"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the &nbsp;<a
-              href=""
-              class="form-input-label-link"
-              >Privacy Policy</a
-            >
+            <span class="form-checkbox-text">
+              I accept the terms and conditions of the
+              <a href="" class="form-input-label-link">Privacy Policy</a>
+            </span>
           </label>
           <button class="button modal-form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
-    <!-- #andregion modal -->
+    <!-- #endregion modal -->
   </body>
 </html>

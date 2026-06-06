@@ -44,9 +44,9 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,13 +95,13 @@ img {
 
 .page-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-title {
@@ -189,4 +189,34 @@ img {
 
 .form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
+}
+
+/* ==================================================================
+    2. TABLET
+   ================================================================== */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .page-title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+/* ==================================================================
+    3. DESKTOP
+   ================================================================== */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
